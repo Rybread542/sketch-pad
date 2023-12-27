@@ -23,6 +23,7 @@ function fillWithBoxes(numPerSide) {
 
         let isMouseDown = false;
         box.addEventListener('mousedown', (e) => {
+            e.preventDefault();
             e.target.style.backgroundColor = randomRGB();
             });
         
